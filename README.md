@@ -19,6 +19,10 @@ It will not be hard to do the following:
 # Why this exploit is more valueable then we first thought.
 As the exploit runs from userspace directly and gains root without patching the kernel, this exploit can perfectly be used for jailbreak purposes. However, since the bug is a race condition that seems to occur rarely correct. Users will have to reboot-and-retry many times before they will be jailbroken again.
 
+# Markabilities
+As found in the latest version of launchd I have found that any userland process able to change the DYLD_INSERT_LIBRARIES environment variable is a possible way to inject arbitrary code into launchd using a malicously crafted dylib. Stay tuned.
+https://pbs.twimg.com/media/DHGOMioW0AAcLnU.jpg:large
+
 # Contributions
 You can always create a pull request if you want to contribute code to the repository.
 We will be adding a file with a lot of offsets needed for future kernel patches.
